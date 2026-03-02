@@ -1,0 +1,54 @@
+version: 2
+
+sources:
+  - name: chicago_raw
+    database: CRIMENES_CHICAGO_DB
+    schema: RAW
+    tables:
+      - name: chicago_crimes
+        description: "This table contains crime data for the city of Chicago."
+        columns:
+          - name: id
+            description: "Unique identifier for each crime record."
+          - name: case_number
+            description: "The case number assigned to the crime."
+          - name: date
+            description: "The date and time when the crime occurred."
+          - name: block
+            description: "The block where the crime occurred."
+          - name: iucr
+            description: "The Illinois Uniform Crime Reporting code for the crime."
+          - name: primary_type
+            description: "The primary type of crime (e.g., THEFT, ASSAULT)."
+          - name: description
+            description: "A more detailed description of the crime."
+          - name: location_description
+            description: "Description of the location where the crime occurred."
+          - name: arrest
+            description: "Indicates whether an arrest was made (true/false)."
+          - name: domestic
+            description: "Indicates whether the crime was domestic-related (true/false)."
+          - name: beat
+            description: "The police beat where the crime occurred."
+          - name: district
+            description: "The police district where the crime occurred."
+          - name: ward
+            description: "The ward where the crime occurred."
+          - name: community_area
+            description: "The community area where the crime occurred."
+          - name: fbi_code
+            description: "The FBI code for the crime."
+          - name: x_coordinate
+            description: "The X coordinate of the crime location."
+          - name: y_coordinate
+            description: "The Y coordinate of the crime location."
+          - name: year
+            description: "The year when the crime occurred."
+          - name: updated_on
+            description: "The date and time when the crime record was last updated."
+          - name: latitude
+            description: "The latitude of the crime location."
+          - name: longitude
+            description: "The longitude of the crime location."
+          - name: location
+            description: "The location of the crime in (latitude, longitude) format."
