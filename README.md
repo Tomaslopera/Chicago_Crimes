@@ -135,4 +135,5 @@ dbt test
 ```
 
 **Schemas**
+
 ![Schemas](snowflake-schemas.png)
