@@ -23,8 +23,6 @@ Raw CSV
                                └── mart_arrest_efficiency (table)
 ```
 
----
-
 ## Snowflake Setup
 
 ```sql
@@ -135,3 +133,6 @@ chicago_crimes:
 dbt run
 dbt test
 ```
+
+**Schemas**
+![Schemas](snowflake-schemas.png)
